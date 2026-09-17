@@ -1,0 +1,1 @@
+cordova build android --release -- --keystore="..\invaloc-key.keystore" --storePassword=123456 --alias=invaloc

@@ -1,0 +1,6 @@
+cd G:\workspace\connector-inv\cordova\platforms\android\app\build\outputs\apk\debug\
+copy app-debug.apk app-inv-aloc15.apk
+jarsigner -keystore G:\workspace\connector-inv\invaloc-key.keystore  -storepass 123456 -keypass 123456 app-inv-aloc15.apk invaloc
+
+
+C:\Users\alexa\AppData\Local\Android\Sdk\build-tools\26.0.1\apksigner.bat sign --ks G:\workspace\connector-inv\invaloc-key.keystore app-inv-aloc15.apk
