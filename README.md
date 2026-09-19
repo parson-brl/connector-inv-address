@@ -47,6 +47,16 @@ docker build -t oxford-app-connector-inv-address .
 docker run -it --name oxford-app-connector-inv-address-rodando -p 8080:8080 -v "${PWD}:/app" oxford-app-connector-inv-address
 ```
 
+Caso você só tenha saido do container com o comando exit e quiser voltar de novo para o container de onde parou use os comandos:
+
+```bash
+# 1. Inicie o container existente
+docker start oxford-app-connector-inv-address-rodando
+
+# 2. Conecte o seu terminal de forma interativa dentro dele
+docker exec -it oxford-app-connector-inv-address-rodando sh
+```
+
 ---
 
 ---
