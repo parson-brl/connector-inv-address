@@ -1,12 +1,14 @@
 # Oxford App Connector Inv Aloc
 
-Aplicativo Android desenvolvido usando o Quasar framework (ou Quasar.js), um framework de código aberto baseado na biblioteca Vue.js
+Aplicativo web desenvolvido usando o Quasar framework (ou Quasar.js), um framework de código aberto baseado na biblioteca Vue.js
+
+Para acessar, entre no site do Connector (http://192.168.0.63/connector/), clique na opção Home, depois o link aparecerá com o label "Alocação - Mobile Web" (http://192.168.0.63/connector/mobile/index.html#/)
 
 Ele foi feito com o Quasar v0.14 (lançado em 2017). Nessa época, o CLI do Quasar não gerenciava o build. O projeto v0.14 na verdade é um projeto Webpack puro, onde o Quasar era apenas uma biblioteca de componentes instalada (note que ele usa quasar-framework e quasar-extras nas dependências, e não o pacote quasar).
 
 Nesta versão antiga, você não deve usar o comando quasar dev, pois ele não vai funcionar de jeito nenhum.
 
-Abaixo o passo a passo para criar um ambiente local usando o Docker, poder executar a aplicação localmente e testar via Web ou publicar uma nova versão do APK de instalação para Android.
+Abaixo o passo a passo para criar um ambiente local usando o Docker, poder executar a aplicação localmente e testar via Web.
 
 ## Crie o arquivo Dockerfile na raiz do projeto
 
@@ -73,16 +75,6 @@ npm install --legacy-peer-deps
 ```bash
 npm run dev
 ```
-
----
-
----
-
-# Para gerar o APK do Android:
-
-### No terminal do Docker (que ficou aberto no passo anterior) execute o comando do Quasar para gerar o APK:
-
-TODO TENTAR GERAR O APK E DOCUMENTAR AQUI O PASSO A PASSO
 
 ---
 
